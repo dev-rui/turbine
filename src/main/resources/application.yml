@@ -1,0 +1,21 @@
+spring:
+  application:
+   name: turbine
+  rabbitmq:
+    addresses: amqp://rabbitmq:5672
+    username:  user
+    password:  123456
+server:
+  port: 8187
+management:
+  port: 8287
+
+eureka:
+  client:
+   serviceUrl:
+    defaultZone: http://eureka-server:8181/eureka/
+
+#turbine:
+#  app-config: eureka-consumer
+#  combine-host-port: true
+
